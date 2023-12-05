@@ -1,0 +1,56 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block body %}
+<main id="main">
+<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="{% static 'horizontal timeline/style.css' %}">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{% static 'assets/img/breadcrumbs-bg.jpg' %}');
+            height: 75px">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Activités</h2>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+      <div class="row gy-5">
+
+          <section class="cd-horizontal-timeline" style="margin-top: 0px">
+        <div class="timeline">
+            <div class="events-wrapper">
+                <div class="events">
+                    <ol>
+                        {% for activity in activities %}
+                        <li>
+                            <a href="#0" data-date="{{ activity.date|date:"d/m/Y" }}">{{ activity.date|date:"d M" }}</a>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                    <span class="filling-line" aria-hidden="true"></span>
+                </div> <!-- .events -->
+            </div> <!-- .events-wrapper -->
+        </div> <!-- .timeline -->
+
+        <div class="events-content" style="margin-top: 0px">
+            <ol>
+                {% for activity in activities %}
+                <li data-date="{{ activity.date|date:"d/m/Y" }}" {% if forloop.first %}class="selected"{% endif %}>
+                    <h2>{{ activity.title }}</h2>
+                    <em>{{ activity.date|date:"d F, Y" }}</em>
+                    <p>{{ activity.description }}</p>
+                </li>
+                {% endfor %}
+            </ol>
+        </div> <!-- .events-content -->
+    </section>
+
+      </div>
+
+      </div>
+    </section>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'>
+</script><script  src="{% static 'horizontal timeline/script.js' %}"></script>
+  </main><!-- End #main -->
+{% endblock %}

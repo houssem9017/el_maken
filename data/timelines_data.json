@@ -1,0 +1,61 @@
+{
+  "timelines": [
+    {
+      "name": "Mohamed Fadhel Ben Achour",
+      "subtitle": "Théologien tunisien éminent",
+      "events": [
+        {
+          "period": "Jeunesse",
+          "year": "1909",
+          "description": "Mohamed Fadhel Ben Achour est né en 1909 à Tunis. Il a grandi dans un environnement qui valorisait l'éducation et la connaissance, ce qui a façonné ses premières années et son intérêt pour l'étude de la théologie et de la philosophie islamiques.",
+          "image": "timelines/img/fadhel/1.jpg"
+        },
+        {
+          "period": "Réalisations académiques",
+          "year": "Années 1930",
+          "description": "Dans les années 1930, Ben Achour est devenu une figure de proue de l'érudition islamique. Son approche académique rigoureuse et son engagement envers la modernisation de la pensée islamique ont joué un rôle crucial dans son ascension en tant qu'autorité respectée dans le monde islamique.",
+          "image": "timelines/img/fadhel/2.jpg"
+        },
+        {
+          "period": "Œuvres influentes",
+          "year": "Années 1950",
+          "description": "Au cours des années 1950, Ben Achour a publié plusieurs œuvres influentes qui ont largement contribué à la jurisprudence et à la pensée islamiques. Ses écrits ont mis en lumière la nécessité d'une interprétation contextuelle des textes sacrés, ouvrant la voie à une approche plus progressive de la loi islamique.",
+          "image": "timelines/img/fadhel/3.jpg"
+        },
+        {
+          "period": "Héritage",
+          "year": "1970",
+          "description": "Mohamed Fadhel Ben Achour est décédé en 1970, laissant un héritage durable. Son impact sur la pensée islamique contemporaine et son rôle dans la modernisation de l'interprétation islamique continuent d'influencer les générations actuelles d'universitaires et de penseurs.",
+          "image": "timelines/img/fadhel/4.jpg"
+        }
+      ]
+    },
+    {
+      "title": "El Maken",
+      "subtitle": "Une Maison de la Culture Innovante",
+      "events": [
+        {
+          "period": "Fondation",
+          "year": "2008",
+          "description": "Fondé par Sakhr Al Matri en 2008, El Maken a été initialement établi en tant que comité de coordination pour le parti politique Al Tajamo.",
+          "image": "timelines/img/maken/1.jpg"
+        },
+        {
+          "period": "Suspension",
+          "year": "2010",
+          "description": "En 2010, à la suite de la révolution, les activités d'El Maken ont été suspendues, marquant une période d'incertitude pour le projet.",
+          "image": "timelines/img/maken/2.jpg"
+        },
+        {
+          "period": "Renaissance et Transformation",
+          "year": "2023",
+          "description": "En 2023, El Maken connaît une véritable renaissance, se transformant en un centre culturel dynamique pour les jeunes. Ce nouvel espace est dédié à l'épanouissement des adolescents à travers des activités ludiques et créatives, en mettant l'accent sur l'intégration de la technologie et de l'innovation. C'est un lieu où la jeunesse peut explorer, créer et s'exprimer librement, tout en étant stimulée par les nouvelles tendances technologiques.",
+          "image": "timelines/img/maken/3.jpg"
+        },
+        {
+          "period": "Vision Future",
+          "year": "Vision d'El Maken",
+          "description": "La vision d'El Maken est de devenir un lieu d'échange d'idées, de partage d'informations et de recherches, et de partage d'expériences, enrichissant la vie culturelle et intellectuelle de la communauté.",
+          "image": "timelines/img/maken/4.png"
+    }]}
+]}

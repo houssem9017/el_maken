@@ -1,0 +1,29 @@
+{% load static %}
+
+<!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'img/logo.png' %}" alt="Logo el maken">
+
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{% url 'home' %}" class="active">Home</a></li>
+
+          <li><a href="{% url 'vr_tour' %}">Faire un tour</a></li>
+          <li><a href="{% url 'aa' %}">Projets</a></li>
+          <li><a href="{% url 'activities' %}">Activités</a></li>
+          <li><a href="{% url 'aa' %}">Articles</a></li>
+          <li><a href="{% url 'timelines_list' %}">Histoire</a></li>
+          <li><a href="{% url 'aa' %}">Reserver</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->

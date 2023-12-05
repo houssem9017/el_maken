@@ -1,0 +1,114 @@
+.btn-retour {
+  background: white;
+  padding: 10px 15px;
+  position: relative;
+  color: #666;
+  transition: all 0.5s ease;
+  font-style: italic;
+  font-size: 18px;
+  margin: 0.5em;
+}
+.btn-retour:before, .btn-retour:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s ease;
+  opacity: 1;
+}
+.btn-retour:before {
+  top: -0.25px;
+  left: -4.25px;
+  width: calc(100% + 8px);
+}
+.btn-retour:after {
+  top: -4.25px;
+  left: -0.25px;
+  height: calc(100% + 8px);
+}
+.btn-retour:hover, .btn-retour:active, .btn-retour:focus {
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px -2px rgba(0, 0, 0, 0.2);
+  color: #9a7c5c;
+}
+.btn-retour:hover:before, .btn-retour:active:before, .btn-retour:focus:before, .btn-retour:hover:after, .btn-retour:active:after, .btn-retour:focus:after {
+  width: calc(100% - 0.25px);
+  height: calc(100% - 0.25px);
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.btn-retour--dark {
+  background: #666666;
+  color: #fff;
+}
+.btn-retour--dark:before, .btn-retour--dark:after {
+  border: 1px solid #666;
+}
+.btn-retour--dark:hover, .btn-retour--dark:active, .btn-retour--dark:focus {
+  background: rgba(102, 102, 102, 0.8);
+}
+
+.btn-retour--gold {
+  color: #9a7c5c;
+}
+.btn-retour--gold:before, .btn-retour--gold:after {
+  border: 1px solid #bba58e;
+}
+
+.btn-retour--blue {
+  background: #24396E;
+  color: #fff;
+}
+.btn-retour--blue:hover, .btn-retour--blue:active, .btn-retour--blue:focus {
+  background: #24396ed6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+a,
+span {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 42px;
+}
+
+span {
+  margin: 0 0 2.5em;
+}
+
+/*body .container {*/
+/*  width: 100%;*/
+/*  max-width: 100%;*/
+/*  margin: auto;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  flex-wrap: wrap;*/
+/*  flex-direction: column;*/
+/*  justify-content: center;*/
+/*  height: 100vh;*/
+/*  background: antiquewhite;*/
+/*  !* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9f9f9+0,faebd7+100 *!*/
+/*  background: #f9f9f9;*/
+/*  !* Old browsers *!*/
+/*  !* FF3.6-15 *!*/
+/*  !* Chrome10-25,Safari5.1-6 *!*/
+/*  background: linear-gradient(135deg, #f9f9f9 0%, antiquewhite 100%);*/
+/*  !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+/*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f9f9f9", endColorstr="#faebd7", GradientType=1 );*/
+/*  !* IE6-9 fallback on horizontal gradient *!*/
+/*  background: #fff;*/
+/*}*/

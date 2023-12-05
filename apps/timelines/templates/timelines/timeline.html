@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Chronologie - {{ history_data.name }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="{% static 'timelines/style.css' %}">
+    <link rel="stylesheet" href="{% static 'timelines/style_button.css' %}">
+</head>
+
+<body>
+<div id="container"></div>
+<div id="info">
+</div>
+<div class="timeline-container" id="timeline-1">
+    <a class="btn-retour" style="margin-left: 85px;font-size: 20px;text-decoration:none"
+       href="{% url 'timelines_list' %}">Retour</a>
+    <div class="timeline-header">
+        <h2 class="timeline-header__title">{{ history_data.name }}</h2>
+        <h3 class="timeline-header__subtitle">{{ history_data.subtitle }}</h3>
+    </div>
+
+    <div class="timeline">
+        {% for event in history_data.events %}
+            <div class="timeline-item" data-text="{{ event.period }}">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static event.image %}" alt="{{ history_data.name }}"/>
+                    <h2 class="timeline__content-title">{{ event.year }}</h2>
+                    <p class="timeline__content-desc">{{ event.description }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="{% static 'timelines/script.js' %}"></script>
+</body>

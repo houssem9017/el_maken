@@ -1,0 +1,30 @@
+{
+    "title": "El Maken",
+    "subtitle": "Une Maison de la Culture Innovante",
+    "events": [
+        {
+            "period": "Fondation",
+            "year": "2023",
+            "description": "Ce nouvel espace est dédié à l'épanouissement des adolescents à travers des activités ludiques et créatives, en mettant l'accent sur l'intégration de la technologie et de l'innovation. C'est un lieu où la jeunesse peut explorer, créer et s'exprimer librement, tout en étant stimulée par les nouvelles tendances technologiques.",
+            "image": "img/3.jpg"
+        },
+        {
+            "period": "Evenements",
+            "year": "Hack El Maken",
+            "description": "Ce hackathon rassemble des esprits brillants issus de divers domaines pour collaborer, réfléchir et créer des solutions concrètes qui peuvent améliorer tous les aspects d'« المكان », économisant ainsi des ressources précieuses, du temps et, plus important encore, façonnant un avenir plus radieux.",
+            "image": "img/hack.jpg"
+        },
+        {
+            "period": "Projets",
+            "year": "Oeuvres artistiques",
+            "description": "Au cours du hackathon Hack El Maken, plusieurs artistes ont participé et ont réussi à montrer leurs skills dans le dessin.",
+            "image": "img/art.jpg"
+        },
+        {
+            "period": "Vision",
+            "year": "Vision",
+            "description": "La vision d'El Maken est de devenir un lieu d'échange d'idées, de partage d'informations et de recherches, et de partage d'expériences, enrichissant la vie culturelle et intellectuelle de la communauté.",
+            "image": "img/3.jpg"
+        }
+    ]
+}
