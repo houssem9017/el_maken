@@ -1,6 +1,6 @@
 # El maken
 
-"El Maken" is an online platform dedicated to showcasing the vibrant activities and rich history of the youth club by the same name.
+"El Maken" is an online platform developed within a span of 12 hours during a hackathon, dedicated to showcasing the vibrant activities and rich history of the youth club bearing the same name.
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install project requirements.
