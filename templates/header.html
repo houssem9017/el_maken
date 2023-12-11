@@ -13,15 +13,14 @@
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="{% url 'home' %}" class="active">Home</a></li>
-
-          <li><a href="{% url 'vr_tour' %}">Faire un tour</a></li>
-          <li><a href="{% url 'activities' %}">Activités</a></li>
-          <li><a href="{% url 'timelines_list' %}">Histoire</a></li>
-          <li><a href="{% url 'reservation' %}">Reserver</a></li>
-        </ul>
-      </nav><!-- .navbar -->
+    <ul>
+        <li><a href="{% url 'home' %}" class="{% if request.path == '/' %}active{% endif %}">Home</a></li>
+        <li><a href="{% url 'vr_tour' %}" class="{% if request.path == '/vr_tour' %}active{% endif %}">Faire un tour VR</a></li>
+        <li><a href="{% url 'activities' %}" class="{% if request.path == '/activities' %}active{% endif %}">Activités</a></li>
+        <li><a href="{% url 'timelines_list' %}" class="{% if request.path == '/timelines/' %}active{% endif %}">Histoire</a></li>
+        <li><a href="{% url 'reservation' %}" class="{% if request.path == '/reservations' %}active{% endif %}">Reserver</a></li>
+    </ul>
+</nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
