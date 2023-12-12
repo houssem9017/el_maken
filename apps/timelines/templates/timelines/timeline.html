@@ -26,7 +26,7 @@
         {% for event in history_data.events %}
             <div class="timeline-item" data-text="{{ event.period }}">
                 <div class="timeline__content">
-                    <img class="timeline__img" src="{% static event.image %}" alt="{{ history_data.name }}"/>
+                    <img class="timeline__img" src="https://res.cloudinary.com/drjr2cpgn/image/upload/v1702404053/el%20maken/static/{{ event.image }}" alt="{{ history_data.name }}"/>
                     <h2 class="timeline__content-title">{{ event.year }}</h2>
                     <p class="timeline__content-desc">{{ event.description }}</p>
                 </div>
