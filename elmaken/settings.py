@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
-
+import base64
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -79,8 +79,21 @@ WSGI_APPLICATION = 'elmaken.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
+cert_base64 = config('DATABASE_CERT')
+if cert_base64:
+    certificate_content = base64.b64decode(cert_base64).decode('utf-8')
+    with open('config-prod-ca-2021.crt', 'w') as cert_file:
+        cert_file.write(certificate_content)
 DATABASES = {
+    'default': {  # conveniently, postgres on supabase as well
+        'ENGINE': config('ENGINE'),
+        'NAME': config('NAME'),
+        'HOST': config('HOST'),
+        'PASSWORD': config('PASSWORD'),
+        'PORT': config('PORT'),
+        'USER': config('USER'),
+        'CERT': config('CERT')
+    }
 }
 
 
